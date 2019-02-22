@@ -12,20 +12,24 @@
 	<body>
 
         <aside id="sidebar">
-            <section>
-                <input id='Sports' class='channel_select' type='submit' value='Sports'>
-                <input id='Shows' class='channel_select' type='submit' value='Shows'>
-                <input id='Movies' class='channel_select' type='submit' value='Movies'>
-                <input id='Pets' class='channel_select' type='submit' value='Pets'>
-            </section> 
+            <nav>
+
+                <h4 id="user_name"></h4>
+
+                <h4 id="channels">
+                    Channels
+                </h4>
+                <section>
+                    <input id='Sports' class='channel_select' type='submit' value='Sports'>
+                    <input id='Shows' class='channel_select' type='submit' value='Shows'>
+                    <input id='Movies' class='channel_select' type='submit' value='Movies'>
+                    <input id='Pets' class='channel_select' type='submit' value='Pets'>
+                </section>
+            </nav> 
         </aside>
 
-		<section class="main-section">
-			<header></header>
-			<nav></nav>			
-			<section id="messages-list">
-
-			</section>
+		<section class="main-section">		
+		    <section id="messages-list"></section>
 			<footer>
 				<div class="footer-block">
 					<textarea rows="4" id="message" class="message-box" placeholder="Enter message"></textarea>
