@@ -84,6 +84,7 @@ let messages_pets = [
 
 
 function createArticle($message) {
+
     let $article = $("<article>").addClass("message-row");
     let $image = $("<img>").attr("src" , $message.user.image);
     let $message_image = $("<div>").addClass("message-image").append($image);
@@ -103,6 +104,7 @@ function createArticle($message) {
 
     $article.append($message_image);
     $article.append($message_meta_text);
+
     return $article;
 }
 
@@ -168,9 +170,10 @@ $(document).ready(function() {
             };		
             let $article = createArticle(message);
             $("#messages-list").prepend($article);
-            current_channel.prepend($article);	
+            //push the new message to the front of the messages array
+            current_channel.unshift(message);
             event.target.value = "";
-            console.log(message);			
+            console.log($article);			
             submitMessage(message);
         }
         });				
