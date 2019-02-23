@@ -96,10 +96,10 @@ function createArticle($message) {
     let $timePieces = $dateTimeOnly.replace(/ /gi , ":").split(":"); 
     let $message_time = $("<span>").addClass("message-time").text($timePieces[ 0 ] + ":" + $timePieces[ 1 ] + " " +  $timePieces [ 3 ] + " " + $dateDateOnly);
     console.log("message-2" , $message);
-    let $message_text = $("<span>").addClass("message-text").text($message.message.text);			
+    let $message_text = $("<span>").addClass("message-text").text($message.message.text);            
     let $message_meta_text = $("<div>").addClass("message-meta-text");
     $message_meta_text.append($message_author);
-    $message_meta_text.append($message_time);	
+    $message_meta_text.append($message_time);    
     $message_meta_text.append($message_text);
 
     $article.append($message_image);
@@ -114,7 +114,7 @@ function renderMessages(messages) {
         let $article = createArticle(message);
         $("#messages-list").append($article);
     });
-}	
+}    
 
 function submitMessage(message) {
     console.log("Message : " + message);
@@ -167,16 +167,16 @@ $(document).ready(function() {
                     "text": event.target.value,
                     "date": (new Date()).getTime()
                 }
-            };		
+            };        
             let $article = createArticle(message);
             $("#messages-list").prepend($article);
             //push the new message to the front of the messages array
             current_channel.unshift(message);
             event.target.value = "";
-            console.log($article);			
+            console.log($article);            
             submitMessage(message);
         }
-        });				
+        });                
 
     renderMessages(messages_landing);
 

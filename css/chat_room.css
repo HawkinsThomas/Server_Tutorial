@@ -8,8 +8,8 @@ html, body {
 }
 .main-section {
     display:inline-block;
-    width:80%;		
-    padding:10px 10px;	
+    width:80%;        
+    padding:10px 10px;    
     height:100%;
     margin-top:2.5rem;
 }
@@ -20,8 +20,8 @@ div {
     margin:auto 0;
     height:70%;
     overflow-y:scroll;
-    border:1px blue solid;		
-    padding:0.2rem 1rem;		
+    border:1px blue solid;        
+    padding:0.2rem 1rem;        
 }
 .message-row {
     display:inline-block;
@@ -30,43 +30,43 @@ div {
 }
 .message-image {
     display:inline-block;
-    width:10%;	
+    width:10%;    
     float:left;
     min-width:30px;
-    max-width:30px;			
+    max-width:30px;            
 }
 .message-image img {
     max-width:60px;
 }
 .message-meta-text {
     display:inline-block;
-    width:90%;	
-    float:right;	
-    padding:0.2em 0.2em 0.2em 0.2em;					
-}				
+    width:90%;    
+    float:right;    
+    padding:0.2em 0.2em 0.2em 0.2em;                    
+}                
 .message-text {
     display:inline-block;
-    width:100%;	
-    float:left;	
-}	
+    width:100%;    
+    float:left;    
+}    
 .message-time {
     display:inline-block;
-    font-size:0.8rem;	
-}				
+    font-size:0.8rem;    
+}                
 
 .message-author {
     display:inline-block;
-    vertical-align:top;				
-    font-weight:bold;	
+    vertical-align:top;                
+    font-weight:bold;    
     padding:0.2em 2em 0.2em 0em;
-    width:5rem;	
-}		
+    width:5rem;    
+}        
 .message-box {
     width:80%;
     font-size:1em;
     margin:1em, auto;
     height:90%;
-}		
+}        
 .footer-block {
     vertical-align: bottom;
     position:fixed;
