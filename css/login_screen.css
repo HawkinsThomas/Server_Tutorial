@@ -4,16 +4,18 @@
 }
 
 body {
-    border-color:black;
-    border-style:solid;
-    padding-top:50px;
-    padding-bottom:70px;
-    padding-left:10px;
+    /*border-color:black;
+    border-style:solid;*/
+    margin-top:50px;
+    margin-bottom:70px;
+    margin-left:10px;
+    height:100%;
 }
 
 aside {
-    width:50%;
+    width:49%;
     display:inline-block;
+    float:left;
 }
 
 aside img {
@@ -23,9 +25,10 @@ aside img {
 }
 
 main {
-    width:49%;
-    vertical-align:top;
+    width:50%;
+    /*vertical-align:top;*/
     display:inline-block;
+    float:left;
 }
 
 h1 {
@@ -56,7 +59,7 @@ h3 {
     margin-top:0px;
 }
 
-@media only screen and (max-width:475px){
+@media only screen and (max-width:600px){
     aside{
         width:80%;
         display:inline-block;

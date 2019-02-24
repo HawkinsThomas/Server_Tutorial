@@ -40,8 +40,7 @@ submit_button.addEventListener("click", function() {submit(users)});
 function submit(users) {
 
     let successful_login = false;
-    
-    if (users[username.value]['password'] == password.value){
+    if (users[user_name.value]["password"] == password.value){
         console.log('Successful Login');
         successful_login = true;
     }
