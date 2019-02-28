@@ -46,6 +46,22 @@ function createArticle( $message ) {
 
   }
 
+let user = {
+    "name": "Kat",
+    "profile_pic": "https://pbs.twimg.com/profile_images/811351709008220160/pJfRFPnq_400x400.jpg",
+    "full_name" : "Katherine Vicks",
+    "handle" : "@K_Vicks",
+    "phone_number" : "416-382-3820",
+    "city" : "Toronto, ON",
+    "email_address" : "kat@myemail.com",
+    "address" : "34 Leval St, M63 3N2",
+    "description" : "Strong user experience (UX) design skills. Experience in user research and interaction design gained through corporate and nonprofit externships. Completed three externships during summer breaks to gain experience in UX design and information architecture. Excels at managing usability testing for XYZ landing pages in preparation for Web site redesign. Very competent in testing parameters, prepared prototypes, recruited users, facilitated tests and reported results.",
+    "description_extended" : "",
+};
+
+
+let user_name = document.getElementById("user_name");
+user_name.innerHTML = user["name"];
 
 
   $( document ).ready(function() {
@@ -54,10 +70,10 @@ function createArticle( $message ) {
       if ( event.which === 13 ) {
         event.preventDefault( );
         let message = {
-         "user": {
-         "name": "Ramses",
-         "image": "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=25"
-         },
+          "user": {
+              "name": user["name"],
+              "image": user["profile_pic"]
+          },
          "message": {
          "text": event.target.value,
          "date": ( new Date( ) ).getTime( )
