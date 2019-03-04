@@ -1,0 +1,124 @@
+20 concepts
+
+1. Object Oriented
+
+Object oriented programming is a programming paradigm which organizes code into "objects" with attributes and methods which define how they behave. 
+
+There are many examples of this used in the project. The DOM for instance, is an object containing a tree attribute which holds all the html elements of the website. The DOM makes it easy to access and manipulate elements using javascript, which uses its own objects for the programmmer to build an interactive web application. 
+
+2. Front End
+
+The Front end of a web application defines the graphical interface and interactivity for the user. 
+
+This is handled by HTML, css and javascript submitted with this project. 
+
+3. Back End
+
+Back end programming is comprised of the business logic and data model of a web application.
+
+The backend component of this project was provided by Ramses, the instuctor and consisted of a database of timestamped messages left by various uses of the application. The messages could be read into the client's browser, displayed on a channels page, and appended to with a new message written by a logged in user. 
+
+4. MVC
+
+The Model View Controller is a design paradigm which organizes the technologies of a web application into 3 distinct group.
+
+Model - the model is the data used by the application.
+View - The presentation layer, this is what the user sees and interacts with
+Controller - Determines what view should be presented to the user, takes data from the user and the model to manipulte the view appropriately. The controller will also update the model when nessescary.
+
+5. MVP
+
+The minimum viable product is the fundamental, bare minimum functionality of an application, service or product required to take it to market. This is usual shared with early adopters in the early testing phases of a product's life cycle.
+
+I belive what we submitted for this project is a perfect example of an MVP. It has all the basic features of a public non-anonomys discussion board. Perhaps a secure log-in would still be required to make this viable. 
+
+6. Semantic HTML elements
+
+Semantic HTML elements describe what their purpose is in their name. for instance, in the "nav" element in our html holds the navigation buttons for each of the 3 webpages.
+
+7. Separation of Conerns
+
+Separation of concerns defines the practice of writing code in a well factored, modular fashion. This encourages code reusebalilty, ease of testing and faster debugging.
+
+A basic example of separating concerns in this project is separating all html styling into unique css files. This is opposed to inline styling where the programmer includes styling the the html file, right inside the element definitions.
+
+8. Dynamic Content
+
+HTML content is considered dynamic when it's value or properites are defined programmatically using javascript.
+
+In this project, the user profile information is read by a javascript program and written to the DOM elements after the webpage loads. This enables the programmer to reuse one html template file for all user profiles.
+
+9. Responsive Design
+
+Responsive design is used to enable html content to respond to the size of the device chosen by the user.
+
+The log-in page in this project has been designed for a desktop sized screen or a mobile device.
+
+10. Requirement Elicitation
+
+Requirement elicitation is the process of gathering and defining the functionality of the product desired by the users and client.
+
+This project provided user stories to define the requirements. This simulates the process of gathering and understanding the requirements.
+
+11. Information Architecture
+
+Information architecture is the art and science of organizing and presenting the data and interface of your application to the user in a way which supports simplicity and intuition.
+
+An example of this in our project is having a link to the other pages in each of the login, channel and profile pages.
+
+12. Development environments
+
+A development enviroment usually provides the following to a software developer: A text editor, file navigation, syntax highlighting, linting, version control interface, debugging and more.
+
+For this project, I used the IDE Visual Studio Code.
+
+13. Version control
+
+Verison control software is an application which stores a running history of every file tracked in a project. It enables editors to access previous states of their project and collaborate in a safe and effective way. Sites such as github enable you to host remote git repositories on their servers, which can be accessed from anywhere.
+
+For this project, our files were uploaded to github and the repo has been shared with our professor, Ramses.
+
+14. Headless servers
+
+A headless server has no GUI, and can only be interacted with via a CLI.
+
+The server to which we deployed our code was a headless server. We connected to the server using ssh, a secure session for remote shell access.
+
+15. Deploying to a server environment
+
+Once an application has been tested and validated by quality, the code is deployed to a server enviroment which can be accessed by the users of said applicaton.
+
+Our code was deployed to a York university server.
+
+16. ssh
+
+Secure shell a secure session for remote shell access.
+
+We used ssh to access our Vagrant virtual environment and deploy our code to the york server.
+
+17. Breadcrumbs
+
+Breadcrums are a trail of links which show the user of a web application how they navigated to the page they are currently viewing. 
+
+18. User Stories
+
+User stores are used to define a desired behaviour that a user would like to see from a product. They are used to derive requirements and functionality.
+
+We used user stories for this project to define the deliverables of the assignment
+
+19. Agile
+
+Agile is a set of values for software development practices. It values:
+
+Individuals and interactions over processes and tools
+Working software over comprehensive documentation
+Customer collaboration over contract negotiation
+Responding to change over following a plan
+
+I believe we used agile practices by delivering one working aspect of the project before each classroom session of the course.
+
+20. Convention
+
+A convention is a generally accepted and modern way of doing things.
+
+In this project we used the convention of having the channels nav menu on the left-hand side of the screen. 
